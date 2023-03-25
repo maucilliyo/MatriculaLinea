@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AF8FFC4-BB3C-41EC-8767-5C1CDBDC1FB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI_Pestanas</RootNamespace>
+    <AssemblyName>UI_Pestanas</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Mao\Desktop\UI_Pestañas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B685D08AA0C03F57320F521F5B8EC410FC57E888</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UI_Pestanas_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BotonMenuMao">
+      <HintPath>..\Componentes\BotonMenuMao.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuBotonMao">
+      <HintPath>..\Componentes\MenuBotonMao.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\Modulos_estudiantes\frmAutoRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Modulos_estudiantes\frmAutoRegistro.Designer.cs">
+      <DependentUpon>frmAutoRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmAulas.Designer.cs">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmProfesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmProfesores.Designer.cs">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUserRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUserRol.Designer.cs">
+      <DependentUpon>frmUserRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUsuarioNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUsuarioNuevo.Designer.cs">
+      <DependentUpon>frmUsuarioNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_aulas.Designer.cs">
+      <DependentUpon>frmR_aulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Profesores.Designer.cs">
+      <DependentUpon>frmR_Profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoUsuarioInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoUsuarioInicio.Designer.cs">
+      <DependentUpon>frmTipoUsuarioInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmCarrera.Designer.cs">
+      <DependentUpon>frmCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmMaterias.Designer.cs">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmOfertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmOfertas.Designer.cs">
+      <DependentUpon>frmOfertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modulos_profesores\frmNotas_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Modulos_profesores\frmNotas_profesor.Designer.cs">
+      <DependentUpon>frmNotas_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Notas_estudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Notas_estudiantes.Designer.cs">
+      <DependentUpon>frmR_Notas_estudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_ofertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_ofertas.Designer.cs">
+      <DependentUpon>frmR_ofertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Reportes\frmR_Usuarios.Designer.cs">
+      <DependentUpon>frmR_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VarGlovales.cs" />
+    <Compile Include="Pages\Modulos_estudiantes\frmMatriculaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Modulos_estudiantes\frmMatriculaEstudiante.Designer.cs">
+      <DependentUpon>frmMatriculaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\modulos_funcionarios\frmMatricula.Designer.cs">
+      <DependentUpon>frmMatricula.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pages\Modulos_estudiantes\frmAutoRegistro.resx">
+      <DependentUpon>frmAutoRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmAulas.resx">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmProfesores.resx">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmUserRol.resx">
+      <DependentUpon>frmUserRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmUsuarioNuevo.resx">
+      <DependentUpon>frmUsuarioNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmR_aulas.resx">
+      <DependentUpon>frmR_aulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmR_Profesores.resx">
+      <DependentUpon>frmR_Profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoUsuarioInicio.resx">
+      <DependentUpon>frmTipoUsuarioInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmCarrera.resx">
+      <DependentUpon>frmCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmMaterias.resx">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmOfertas.resx">
+      <DependentUpon>frmOfertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Modulos_profesores\frmNotas_profesor.resx">
+      <DependentUpon>frmNotas_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmR_Notas_estudiantes.resx">
+      <DependentUpon>frmR_Notas_estudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmR_ofertas.resx">
+      <DependentUpon>frmR_ofertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Reportes\frmR_Usuarios.resx">
+      <DependentUpon>frmR_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pages\Modulos_estudiantes\frmMatriculaEstudiante.resx">
+      <DependentUpon>frmMatriculaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\modulos_funcionarios\frmMatricula.resx">
+      <DependentUpon>frmMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UI_Pestanas_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564399-close_81512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showproduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Invoice_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_receipt_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aulas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
+      <Project>{c94d3b75-2a8d-4ce4-b852-9ac8dc627338}</Project>
+      <Name>CapaEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{8057c15f-ab0d-4742-b79f-fc0b2d002cc5}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carreras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Materias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ofertas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagenReportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
